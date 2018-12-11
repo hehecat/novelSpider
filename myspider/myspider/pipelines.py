@@ -9,7 +9,6 @@ from urllib.error import HTTPError, URLError
 from pymongo import MongoClient
 from urllib import request
 from bs4 import BeautifulSoup
-import requests
 
 class MyspiderPipeline(object):
     def process_item(self, item, spider):
@@ -86,12 +85,14 @@ class MongoDBPipeline(object):
     def from_crawler(cls, crawler):
         return cls(
             mongo_uri=crawler.settings.get('MONGO_DB_URI', 'mongodb://localhost:27017'),
-            mongo_db=crawler.settings.get('MONGO_DB_NAME', 'novel2')
+            mongo_db=crawler.settings.get('MONGO_DB_NAME', 'novel')
         )
 
     def open_spider(self, spider):
         self.client = MongoClient(self.mongo_uri)
         self.db = self.client[self.mongo_db]
+        # mongodb 数据库账号密码认证
+        self.db.authenticate('novel', 'novel')
 
     def close_spider(self, spider):
         self.client.close()

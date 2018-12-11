@@ -7,9 +7,11 @@ from ..items import MyspiderItem
 from scrapy_redis.spiders import RedisSpider
 
 class A23usSpider(RedisSpider):
-    name = '23us'
+    name = 'a23us'
     allowed_domains = ['x23us.com']
-    start_urls = ['https://www.x23us.com/quanben/1']
+
+    # slave注释下面的start_urls  从redis获取
+    # start_urls = ['https://www.x23us.com/quanben/1']
     server_link = 'https://www.x23us.com/quanben/'
 
     def start_requests(self):
