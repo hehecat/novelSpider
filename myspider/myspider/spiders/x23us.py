@@ -6,12 +6,12 @@ from scrapy import Selector
 from ..items import MyspiderItem
 from scrapy_redis.spiders import RedisSpider
 
-class A23usSpider(RedisSpider):
-    name = 'a23us'
+class X23usSpider(RedisSpider):
+    name = 'x23us'
     allowed_domains = ['x23us.com']
 
     # slave注释下面的start_urls  从redis获取
-    # start_urls = ['https://www.x23us.com/quanben/1']
+    start_urls = ['https://www.x23us.com/quanben/1']
     server_link = 'https://www.x23us.com/quanben/'
 
     def start_requests(self):
@@ -56,9 +56,14 @@ class A23usSpider(RedisSpider):
 
         item = response.meta['item']
         item['novel_family'] = response.xpath('//table//tr[1]/td[1]/a/text()').extract_first()
+        item['novel_number'] = response.xpath('//table//tr[2]/td[2]/text()').extract_first()
+        item['novel_click'] = response.xpath('//table//tr[3]/td[1]/text()').extract_first()
+        item['novel_recommend'] = response.xpath('//table//tr[4]/td[1]/text()').extract_first()
+        item['novel_store'] = response.xpath('//table//tr[2]/td[1]/text()').extract_first()
         item['novel_author'] = response.xpath('//table[@id="at"]//tr[1]/td[2]/text()').extract_first()
         item['novel_status'] = response.xpath('//table//tr[1]/td[3]/text()').extract_first()
         item['novel_updatetime'] = response.xpath('//table//tr[2]/td[3]/text()').extract_first()
+        item['novel_introduction'] = response.xpath('//dl[@id="content"]/dd//p[2]//text()').extract()[11]
         url = response.xpath('//a[@class="read"]/@href').extract_first()
 
         yield scrapy.Request(url=url, meta={'item': item}, callback=self.parse4)

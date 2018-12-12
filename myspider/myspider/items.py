@@ -17,18 +17,24 @@ class MyspiderItem(scrapy.Item):
     novel_url = scrapy.Field()
     # 小说作者
     novel_author = scrapy.Field()
+    # 小说简介
+    novel_introduction = scrapy.Field()
     # 小说状态
     novel_status = scrapy.Field()
     # 小说字数
     novel_number = scrapy.Field()
+    # 收藏数
+    novel_store = scrapy.Field()
+    # 点击数
+    novel_click = scrapy.Field()
+    # 推荐数
+    novel_recommend = scrapy.Field()
+    # 小说最后更新时间
+    novel_updatetime = scrapy.Field()
     # 章节内容
     capture_content = scrapy.Field()
     # 章节名
     capture_name = scrapy.Field()
-    #章节地址
-    capture_url = scrapy.Field()
-    # 小说最后更新时间
-    novel_updatetime = scrapy.Field()
 
 
 

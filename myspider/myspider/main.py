@@ -1,5 +1,5 @@
 from scrapy import cmdline
 
 
-command = ['scrapy', 'crawl', 'a23us']
+command = ['scrapy', 'crawl', 'x23us']
 cmdline.execute(command)
