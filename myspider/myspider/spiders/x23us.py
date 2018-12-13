@@ -63,7 +63,9 @@ class X23usSpider(RedisSpider):
         item['novel_author'] = response.xpath('//table[@id="at"]//tr[1]/td[2]/text()').extract_first()
         item['novel_status'] = response.xpath('//table//tr[1]/td[3]/text()').extract_first()
         item['novel_updatetime'] = response.xpath('//table//tr[2]/td[3]/text()').extract_first()
-        item['novel_introduction'] = response.xpath('//dl[@id="content"]/dd//p[2]//text()').extract()[11]
+        intro_xpath = response.xpath('//dl[@id="content"]/dd[2]//p[2][not(@class)]')[0]
+        item['novel_introduction'] = intro_xpath.xpath('string(.)').extract_first()
+
         url = response.xpath('//a[@class="read"]/@href').extract_first()
 
         yield scrapy.Request(url=url, meta={'item': item}, callback=self.parse4)
@@ -71,7 +73,7 @@ class X23usSpider(RedisSpider):
     # 获得小说所有章节的地址和名称
     def parse4(self, response):
         item = response.meta['item']
-        # 存放小说所有章节地址
+
         section_urls = response.xpath('//table//tr/td/a/@href').extract()
         section_urls = list(map(lambda x: response.url + x, section_urls))
         for url in section_urls:
@@ -84,7 +86,7 @@ class X23usSpider(RedisSpider):
         item = response.meta['item']
         content = response.css('#contents').extract_first()[20:-5]
         title = response.xpath('//*[@id="amain"]/dl/dd[1]/h1/text()').extract_first()
-        item['capture_content'] = content
+        item['capture_content'] = content.replace('顶点小说 Ｘ２３ＵＳ．ＣＯＭ更新最快','')
         item['capture_name'] = title
         yield item
 

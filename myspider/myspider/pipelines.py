@@ -40,18 +40,31 @@ class MongoDBPipeline(object):
         section_url_downloaded_collection = self.db.section_url_collection
 
         # if not section_url_downloaded_collection.find_one({"url": url}):
+        # 存小说章节内容
         novel = self.db[item['novel_name']]
         novel.insert({
             "_id": url.split('/')[-1][:-5],
-            "novel_name": item['novel_name'],
-            "novel_family": item['novel_family'],
-            "novel_author": item['novel_author'],
-            "novel_status": item['novel_status'],
-            "novel_status": item['novel_status'],
-            "novel_status": item['novel_status'],
-            "novel_status": item['novel_status'],
             "section_name": item['capture_name'],
             "content": item['capture_content']
         })
+
+        # 存小说信息
+        novel_intro = self.db['novel']
+        if not novel_intro.find_one({"novel_name": item['novel_name']}):
+            novel_intro.insert({
+                "novel_name": item['novel_name'],
+                "novel_family": item['novel_family'],
+                "novel_author": item['novel_author'],
+                'novel_introduction': item['novel_introduction'],
+                "novel_number": item['novel_number'],
+                'novel_store': item['novel_store'],
+                'novel_click': item['novel_click'],
+                'novel_recommend': item['novel_recommend'],
+                "novel_status": item['novel_status'],
+                'novel_url': item['novel_url'],
+
+            })
+
         section_url_downloaded_collection.insert({"url": url})
+
         return item

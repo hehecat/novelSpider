@@ -35,6 +35,8 @@ class MyspiderItem(scrapy.Item):
     capture_content = scrapy.Field()
     # 章节名
     capture_name = scrapy.Field()
+    # 章节url
+    capture_url = scrapy.Field()
 
 
 
