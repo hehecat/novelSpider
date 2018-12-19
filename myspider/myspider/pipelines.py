@@ -29,7 +29,7 @@ class MongoDBPipeline(object):
         self.client = MongoClient(self.mongo_uri)
         self.db = self.client[self.mongo_db]
         # mongodb 数据库账号密码认证
-        # self.db.authenticate('novel', 'novel')
+        self.db.authenticate('x23us', 'x23us')
 
     def close_spider(self, spider):
         self.client.close()
@@ -52,16 +52,16 @@ class MongoDBPipeline(object):
         novel_intro = self.db['novel']
         if not novel_intro.find_one({"novel_name": item['novel_name']}):
             novel_intro.insert({
-                "novel_name": item['novel_name'],
-                "novel_family": item['novel_family'],
-                "novel_author": item['novel_author'],
-                'novel_introduction': item['novel_introduction'],
-                "novel_number": item['novel_number'],
-                'novel_store': item['novel_store'],
-                'novel_click': item['novel_click'],
-                'novel_recommend': item['novel_recommend'],
-                "novel_status": item['novel_status'],
-                'novel_url': item['novel_url'],
+                "novel_name": item['novel_name'].strip(),
+                "novel_family": item['novel_family'].strip(),
+                "novel_author": item['novel_author'].strip(),
+                'novel_introduction': item['novel_introduction'].strip(),
+                "novel_number": item['novel_number'].strip(),
+                'novel_store': item['novel_store'].strip(),
+                'novel_click': item['novel_click'].strip(),
+                'novel_recommend': item['novel_recommend'].strip(),
+                "novel_status": item['novel_status'].strip(),
+                'novel_url': item['novel_url'].strip(),
 
             })
 
