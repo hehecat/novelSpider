@@ -22,14 +22,14 @@ class MongoDBPipeline(object):
     def from_crawler(cls, crawler):
         return cls(
             mongo_uri=crawler.settings.get('MONGO_DB_URI', 'mongodb://localhost:27017'),
-            mongo_db=crawler.settings.get('MONGO_DB_NAME', 'novel3')
+            mongo_db=crawler.settings.get('MONGO_DB_NAME', 'novel')
         )
 
     def open_spider(self, spider):
         self.client = MongoClient(self.mongo_uri)
         self.db = self.client[self.mongo_db]
         # mongodb 数据库账号密码认证
-        self.db.authenticate('x23us', 'x23us')
+        # self.db.authenticate('x23us', 'x23us')
 
     def close_spider(self, spider):
         self.client.close()
@@ -62,6 +62,7 @@ class MongoDBPipeline(object):
                 'novel_recommend': item['novel_recommend'].strip(),
                 "novel_status": item['novel_status'].strip(),
                 'novel_url': item['novel_url'].strip(),
+                'novel_cover': item['novel_cover'].strip()
 
             })
 

@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="853da6e5-9d43-4908-ae85-ed799e59c659" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongodb.py" beforeDir="false" afterPath="$PROJECT_DIR$/mongodb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myspider/myspider/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/myspider/myspider/items.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myspider/myspider/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/myspider/myspider/pipelines.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myspider/myspider/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/myspider/myspider/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myspider/myspider/spiders/novel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myspider/myspider/spiders/x23us.py" beforeDir="false" afterPath="$PROJECT_DIR$/myspider/myspider/spiders/x23us.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,85 +19,8 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/novelSpider$novel.coverage" NAME="novel Coverage Results" MODIFIED="1542937670358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/myspider/myspider/spiders" />
     <SUITE FILE_PATH="coverage/novelSpider$pymongo.coverage" NAME="pymongo Coverage Results" MODIFIED="1545194287835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/novelSpider$main.coverage" NAME="main Coverage Results" MODIFIED="1544670450262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/myspider/myspider" />
+    <SUITE FILE_PATH="coverage/novelSpider$main.coverage" NAME="main Coverage Results" MODIFIED="1551678131161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/myspider/myspider" />
     <SUITE FILE_PATH="coverage/novelSpider$a23us.coverage" NAME="a23us Coverage Results" MODIFIED="1543132655334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/myspider/myspider/spiders" />
-  </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="1743776333">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="6" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.17" value="1" />
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.open.time.94" value="1" />
-          <entry key="project.opened" value="7" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="cfg" value="2" />
-          <entry key="py" value="75" />
-          <entry key="txt" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="Ini" value="2" />
-          <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="80" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="dummy" value="9" />
-          <entry key="py" value="3214" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="PLAIN_TEXT" value="28" />
-          <entry key="Python" value="3493" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="1670481148">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="md" value="1" />
-          <entry key="py" value="2" />
-          <entry key="txt" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="md" value="89" />
-          <entry key="py" value="242" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="Markdown" value="89" />
-          <entry key="Python" value="242" />
-        </counts>
-      </usages-collector>
-    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="novelSpider" />
@@ -103,8 +30,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myspider/myspider/spiders/x23us.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1417">
-              <caret line="88" column="73" selection-start-line="88" selection-start-column="73" selection-end-line="88" selection-end-column="73" />
+            <state relative-caret-position="578">
+              <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
               <folding>
                 <element signature="e#24#33#0" expanded="true" />
               </folding>
@@ -112,11 +39,34 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$USER_HOME$/Library/Application Support/JetBrains/Toolbox/apps/PyCharm-P/ch-0/191.7141.48/PyCharm.app.vmoptions">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" selection-start-line="18" selection-end-line="18" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mongodb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="17120" selection-start-line="2" selection-start-column="17120" selection-end-line="2" selection-end-column="17120" />
+            <state>
+              <caret column="14" selection-start-column="14" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myspider/myspider/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myspider/myspider/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -124,8 +74,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myspider/myspider/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+            <state relative-caret-position="459">
+              <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -133,26 +83,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myspider/myspider/items.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="19" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="19" />
+            <state relative-caret-position="170">
+              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myspider/myspider/main.py">
+        <entry file="file://$PROJECT_DIR$/myspider/myspider/middlewares.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+            <state relative-caret-position="986">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myspider/myspider/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="31" column="35" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="35" />
+            <state relative-caret-position="782">
+              <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
               <folding>
                 <element signature="e#193#237#0" expanded="true" />
               </folding>
@@ -202,18 +152,13 @@
         <option value="$PROJECT_DIR$/myspider/myspider/spiders/a23us.py" />
         <option value="$PROJECT_DIR$/myspider/myspider/main.py" />
         <option value="$PROJECT_DIR$/mongodb.py" />
-        <option value="$PROJECT_DIR$/myspider/myspider/items.py" />
-        <option value="$PROJECT_DIR$/myspider/myspider/spiders/x23us.py" />
         <option value="$PROJECT_DIR$/myspider/myspider/settings.py" />
+        <option value="$PROJECT_DIR$/myspider/myspider/items.py" />
         <option value="$PROJECT_DIR$/myspider/myspider/pipelines.py" />
+        <option value="$PROJECT_DIR$/myspider/myspider/spiders/x23us.py" />
+        <option value="$USER_HOME$/Library/Application Support/JetBrains/Toolbox/apps/PyCharm-P/ch-0/191.7141.48/PyCharm.app.vmoptions" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1280" />
@@ -258,6 +203,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -276,7 +222,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.pymongo">
+  <component name="RunManager" selected="Python.main">
     <configuration name="a23us" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="novelSpider" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -373,8 +319,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.pymongo" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.pymongo" />
         <item itemvalue="Python.a23us" />
         <item itemvalue="Python.novel" />
       </list>
@@ -390,6 +336,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1542893801058</updated>
+      <workItem from="1554687680755" duration="146000" />
+      <workItem from="1557152265775" duration="482000" />
+      <workItem from="1557383593724" duration="41000" />
+      <workItem from="1557478783879" duration="12000" />
+      <workItem from="1557478845868" duration="27000" />
+      <workItem from="1557793707091" duration="2216000" />
+      <workItem from="1558076338184" duration="172000" />
     </task>
     <task id="LOCAL-00001" summary="添加爬取内容">
       <created>1544584477945</created>
@@ -405,8 +358,18 @@
       <option name="project" value="LOCAL" />
       <updated>1544666393039</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="去空格">
+      <created>1545194367688</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1545194367688</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3096000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -419,14 +382,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978261" visible="true" weight="0.18012924" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978261" visible="true" weight="0.21486267" />
       <window_info id="Structure" order="1" sideWeight="0.5021739" side_tool="true" weight="0.24959612" />
       <window_info id="Favorites" order="2" sideWeight="0.5021739" side_tool="true" weight="0.24959612" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919224" weight="0.39178082" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919224" weight="0.39124086" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -472,24 +434,11 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="添加爬取内容" />
     <MESSAGE value="小说信息与内容分开存" />
-    <option name="LAST_COMMIT_MESSAGE" value="小说信息与内容分开存" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/myspider/myspider/spiders/x23us.py</url>
-          <line>68</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="去空格" />
+    <option name="LAST_COMMIT_MESSAGE" value="去空格" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="setValue">
@@ -505,9 +454,6 @@
     <entry file="file:///usr/local/anaconda3/envs/novelSpider/lib/python3.6/site-packages/lxml/html/__init__.py" />
     <entry file="file:///usr/local/anaconda3/envs/novelSpider/lib/python3.6/site-packages/scrapy/utils/trackref.py" />
     <entry file="file:///usr/local/anaconda3/envs/novelSpider/lib/python3.6/site-packages/twisted/internet/defer.py" />
-    <entry file="file://$PROJECT_DIR$/myspider/myspider/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.2/python_stubs/-1287612250/builtins.py" />
     <entry file="file:///usr/local/anaconda3/envs/novelSpider/lib/python3.6/site-packages/scrapy/commands/__init__.py" />
     <entry file="file:///usr/local/anaconda3/envs/novelSpider/lib/python3.6/queue.py" />
@@ -518,13 +464,6 @@
     <entry file="file://$PROJECT_DIR$/myspider/myspider/spiders/Crawlspider.py" />
     <entry file="file://$PROJECT_DIR$/myspider/myspider/mongopiple.py" />
     <entry file="file://$PROJECT_DIR$/thefile.txt" />
-    <entry file="file://$PROJECT_DIR$/myspider/myspider/middlewares.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/requirement.txt" />
     <entry file="file://$PROJECT_DIR$/myspider/myspider/spiders/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -602,11 +541,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myspider/myspider/spiders/novel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-36" />
-      </provider>
-    </entry>
     <entry file="file:///usr/local/anaconda3/envs/novelSpider/lib/python3.6/site-packages/scrapy/item.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -614,51 +548,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mongodb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17120" selection-start-line="2" selection-start-column="17120" selection-end-line="2" selection-end-column="17120" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myspider/myspider/items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="19" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myspider/myspider/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/myspider/myspider/spiders/novel.py" />
     <entry file="file://$PROJECT_DIR$/myspider/myspider/spiders/x23us.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1417">
-          <caret line="88" column="73" selection-start-line="88" selection-start-column="73" selection-end-line="88" selection-end-column="73" />
+        <state relative-caret-position="578">
+          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
           <folding>
             <element signature="e#24#33#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mongodb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myspider/myspider/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myspider/myspider/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/myspider/myspider/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+        <state relative-caret-position="459">
+          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myspider/myspider/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myspider/myspider/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myspider/myspider/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="31" column="35" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="35" />
+        <state relative-caret-position="782">
+          <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
           <folding>
             <element signature="e#193#237#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Application Support/JetBrains/Toolbox/apps/PyCharm-P/ch-0/191.7141.48/PyCharm.app.vmoptions">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" selection-start-line="18" selection-end-line="18" selection-end-column="57" />
         </state>
       </provider>
     </entry>

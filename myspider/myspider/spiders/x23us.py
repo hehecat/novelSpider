@@ -11,8 +11,8 @@ class X23usSpider(RedisSpider):
     allowed_domains = ['x23us.com']
 
     # slave注释下面的start_urls  从redis获取
-    start_urls = ['https://www.x23us.com/quanben/1']
-    server_link = 'https://www.x23us.com/quanben/'
+    # start_urls = ['https://www.x23us.com/quanben/1']
+    # server_link = 'https://www.x23us.com/quanben/'
 
     def start_requests(self):
         yield scrapy.Request(url=self.start_urls[0], callback=self.parse1)
@@ -65,6 +65,7 @@ class X23usSpider(RedisSpider):
         item['novel_updatetime'] = response.xpath('//table//tr[2]/td[3]/text()').extract_first()
         intro_xpath = response.xpath('//dl[@id="content"]/dd[2]//p[2][not(@class)]')[0]
         item['novel_introduction'] = intro_xpath.xpath('string(.)').extract_first()
+        item['novel_cover'] = 'https://www.x23us.com/'+response.xpath('//*[@id="content"]/dd[2]/div[1]/a/img/@src').extract_first()
 
         url = response.xpath('//a[@class="read"]/@href').extract_first()
 

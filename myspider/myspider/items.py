@@ -21,6 +21,8 @@ class MyspiderItem(scrapy.Item):
     novel_introduction = scrapy.Field()
     # 小说状态
     novel_status = scrapy.Field()
+    # 小说图像
+    novel_cover = scrapy.Field()
     # 小说字数
     novel_number = scrapy.Field()
     # 收藏数

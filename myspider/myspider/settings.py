@@ -25,15 +25,15 @@ DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
 SCHEDULER_PERSIST = True
 
 # mongodb 数据库设置
-MONGO_DB_URI = 'mongodb://ip_address:27017'
-MONGO_DB_NAME = 'novel'
+MONGO_DB_URI = 'mongodb://localhost:27017'
+MONGO_DB_NAME = 'x23us'
 
 # redis设置
-REDIS_URL = 'redis://root:password@ip_address:6379'
+REDIS_URL = 'redis://root@localhost:6379'
 
 # REDIS_HOST = 'localhost'
 # REDIS_PORT = 6379
-# REDIS_PARAMS = {'password': 'pass'}
+# REDIS_PARAMS = {'password': 'test'}
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = 'myspider (+http://www.yourdomain.com)'
@@ -42,7 +42,6 @@ REDIS_URL = 'redis://root:password@ip_address:6379'
 ROBOTSTXT_OBEY = False
 
 ITEM_PIPELINES = {
-    # 'myspider.pipelines.MyspiderPipeline': 300,
     'myspider.pipelines.MongoDBPipeline': 300,
 
 }
